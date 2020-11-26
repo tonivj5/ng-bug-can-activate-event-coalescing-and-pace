@@ -2,9 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'bug-can-activate';
+  constructor() {
+    // You can uncomment this to see that it doesn't produce any tick...
+    // but when app works, it produce a tick!
+    // setInterval(() => {
+    //   console.log('ey');
+    // }, 1000);
+  }
 }
